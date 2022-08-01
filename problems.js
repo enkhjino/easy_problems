@@ -34,4 +34,22 @@ function twoSum1(nums, target){
     }
 }
 
-twoSum1()
+//twoSum1()
+
+function isPalindrome(x) {
+    var str = x.toString();
+    if(str.length===1) return true;
+    let first = 0;
+    let last = str.length-1;
+    while(first<last){
+        if(str[first]===str[last]){
+            first++;
+            last--;
+        }else{
+            return false;
+        }
+    }
+    return true;
+};
+
+console.log(isPalindrome(121))
